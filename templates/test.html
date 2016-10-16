@@ -1,0 +1,25 @@
+<html>
+</head></head>
+<body>
+
+<h1>Parsey McParseFace Template Parser</h1>
+
+<h3>Run the tests! Gimme a GO/NO-GO for shipment</h3>
+
+<ul>
+    <li>Simple text replace - {simple_text}</li>
+    <li>Multiple text replace - {multiple_text} and {multiple_text}</li>
+    <li>HTML unescaped replace - {html_replace}</li>
+    <li>HTML escaped replace - {text_replace}</li>
+    <li>Tags with spaces - { tag_with_spaces }</li>
+    <li>Double tag - <i>expect curly braces wrapping</i> - {{double_tag}}</li>
+    <li>Tag with UTF8 chars - {øåæé_tag}</li>
+    <li>Tag with special chard - {tag-with-%!@#$%^*()_+=-~`?,./\';][|":?}</li>
+    <li>Unclosed tag - <i>expect no replacement</i> - {unclosed_tag</li>
+    <li>Unused tag - <i>result determined by clear_unused_tags option</i> - {unused_tag}</li>
+    <li>Tag with inner HTML - <i>expect no replacement</i> - {<span>Inner tag</span>}</li>
+</ul>
+
+<div> </div>
+</body>
+</html>
